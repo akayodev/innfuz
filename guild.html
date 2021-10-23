@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>[TITLE] ManUcoz.Ru</title>
+<link rel="stylesheet" href="/templates/Naruto-4Life/style.css" type="text/css" />
+<link rel="stylesheet" href="/engine.css" type="text/css" />
+</head>
+<body>
+<script type="text/javascript" src="/templates/Naruto-4Life/js/jquery.scroll.min.js"></script>
+<script type="text/javascript" src="/templates/Naruto-4Life/js/scripts.js"></script>
+<div id="wrapper">
+
+<!-- <header> -->
+<header>
+ <div id="header_h">
+ <div class="logo fade lcol"><a href="/" title="$SITE_NAME$">$SITE_NAME$</a></div>
+ <ul class="soc_icons lcol">
+ <li class="ico_1"><a href="#">Вконтакте</a></li>
+ <li class="ico_2"><a href="#">Twitter</a></li>
+ <li class="ico_3"><a href="#">Facebook</a></li>
+ </ul>
+ <div class="header_search lcol">
+ <form onsubmit="this.sfSbm.disabled=true" method="post" action='/load/'>
+ <input name="query" id="stitle" class="lcol" value="Введите текст для поиска..." onblur="if(this.value=='') this.value='Введите текст для поиска...';" onfocus="if(this.value=='Введите текст для поиска...') this.value='';" type="text" maxlength="60" />
+ <input value="Поиск" name="sfSbm" class="rcol fade" alt="Поиск" type="submit" />
+ <input type="hidden" name="a" value="2">
+ </form>
+ </div>
+ <div class="relizes rcol">
+ <div class="relizes-a fade"><a href="#">Полное расписание всех релизов</a></div>
+ <div class="relizes_block" id="sp_1_cont">
+ <div class="relizes_img lcol" style="background-image: url('/templates/Naruto-4Life/img/poster_1.png');"></div>
+ <div class="relizes-mess rcol">
+ <span class="relizes-messg">
+ <a href="#">Naruto Shippuuden 294</a><br>
+ 20 декабря 2012
+ </span>
+ <span class="relizes-messg">
+ <a href="#">Naruto Shippuuden 294</a><br>
+ 20 декабря 2012
+ </span>
+ </div>
+ </div>
+ <div class="relizes_block" id="sp_2_cont" style="display:none;">
+ <div class="relizes_img lcol" style="background-image: url('/templates/Naruto-4Life/img/poster_2.png');"></div>
+ <div class="relizes-mess rcol">
+ <span class="relizes-messg">
+ <a href="#">Naruto Shippuuden 294</a><br>
+ 20 декабря 2012
+ </span>
+ <span class="relizes-messg">
+ <a href="#">Naruto Shippuuden 294</a><br>
+ 20 декабря 2012
+ </span>
+ </div>
+ </div>
+ <div class="relizes_block" id="sp_3_cont" style="display:none;">
+ <div class="relizes_img lcol" style="background-image: url('/templates/Naruto-4Life/img/poster_3.png');"></div>
+ <div class="relizes-mess rcol">
+ <span class="relizes-messg">
+ <a href="#">Naruto Shippuuden 294</a><br>
+ 20 декабря 2012
+ </span>
+ <span class="relizes-messg">
+ <a href="#">Naruto Shippuuden 294</a><br>
+ 20 декабря 2012
+ </span>
+ </div>
+ </div>
+ <div class="relizes_block" id="sp_4_cont" style="display:none;">
+ <div class="relizes_img lcol" style="background-image: url('/templates/Naruto-4Life/img/poster_4.png');"></div>
+ <div class="relizes-mess rcol">
+ <span class="relizes-messg">
+ <a href="#">Naruto Shippuuden 294</a><br>
+ 20 декабря 2012
+ </span>
+ <span class="relizes-messg">
+ <a href="#">Naruto Shippuuden 294</a><br>
+ 20 декабря 2012
+ </span>
+ </div>
+ </div>
+ <ul class="relizes-menu">
+ <li id="sp_1" onclick="ChangeMenu('sp_1');"><span>Наруто</span></li>
+ <li id="sp_2" onclick="ChangeMenu('sp_2');"><span>Bleach</span></li>
+ <li id="sp_3" onclick="ChangeMenu('sp_3');"><span>Fairy Tail</span></li>
+ <li id="sp_4" onclick="ChangeMenu('sp_4');"><span>One Piece</span></li>
+ </ul>
+ <div class="clr"></div>
+ </div>
+ </div>
+ <a href="#" class="rss_ico fade" title="RSS Feed">rss</a>
+ <div class="header_bg_1"></div>
+ <div class="header_bg_2"></div>
+ <div id="header_b">
+ <nav class="lcol hmenu">
+ <ul id="h_flow">
+ <li><a href="/"><span>Главная</span></a></li>
+ <li><a href="#"><span>Правила</span></a></li>
+ <li><a href="#"><span>Новости</span></a></li>
+ <li><a href="#"><span>Статистика</span></a></li>
+ <li class="h_this"><a href="#"><span>Категории</span></a>
+ <ul>
+ <li><a href="#">Подкатегория меню</a></li>
+ <li><a href="#">Подкатегория меню</a></li>
+ <li><a href="#">Подкатегория меню</a></li>
+ <li><a href="#">Подкатегория меню</a></li>
+ <li><a href="#">Подкатегория меню</a></li>
+ </ul>
+ </li>
+ <li><a href="#"><span>Контакты</span></a></li>
+ </ul>
+ </nav>
+ </div>
+</header>
+<!-- </header> -->
+
+<!-- <middle> -->
+<div id="contents" class="clr">
+<section class="lcol">
+<div class="speedbar clr">
+ <a href="/">Главная</a> 
+</div>
+<aside class="lcol">
+<!-- <container> --><!-- </container> -->
+</aside>
+<div class="content">
+ [BODY]
+<div class="clr"></div>
+</div>
+</section>
+<aside class="rcol">
+<?if($USER_LOGGED_IN$)?>
+<div class="login_block">
+ <div class="login_block_c">
+ <div class="login_block_h"><div>ПАНЕЛЬ <span>УПРАВЛЕНИЯ</span></div></div>
+ <div class="is_login">
+ <div class="lcol ava">
+ <?if($USER_AVATAR_URL$)?><img src="$USER_AVATAR_URL$" alt=""><?else?><img src="" alt=""><?endif?>
+ </div>
+ <ul class="rcol">
+ <li><a href="/index/8" target="_blank">Мой профиль</a></li>
+ <li><a href="/news/0-0-0-0-1">Добавить новость</a></li>
+ <li><a href="/index/14">Сообщения <span>$UNREAD_PM$</span></a></li>
+ <li><a href="/index/11">Настройки</a></li>
+ <li><a href="/index/10">Выход</a></li>
+ </ul>
+ </div>
+ </div>
+ </div>
+<?else?>
+ <div class="login_block">
+ <div class="login_block_c">
+ <div class="login_block_h"><div>ВХОД <span>НА САЙТ</span></div></div>
+ <div class="auth">
+ $LOGIN_FORM$
+ </div>
+ </div>
+ </div>
+<?endif?> 
+ <!-- <container> --><!-- </container> -->
+</aside>
+<div class="clr"></div>
+</div>
+<!-- </middle> -->
+
+<!-- <footer> -->
+<footer>
+ <div class="logo fade lcol"><a href="/" title="$SITE_NAME$">$SITE_NAME$</a></div>
+ <div class="footer_r">
+ <div class="footer_r_h">
+ Copyright © 2014, <a href="/">$SITE_NAME$</a>. Все права защищены. $POWERED_BY$<br>
+ При копировании материала с сайта, обратная ссылка обязательна!
+ </div>
+ <div class="footer_r_b">
+ <div class="footer_menu lcol">
+ <a href="#">Naruto Shippuuden</a> |
+ <a href="#">Naruto</a> |
+ <a href="#">One Piece</a> |
+ <a href="#">Bleach</a> |
+ <a href="#">Anime</a> |
+ <a href="#">Fairy Tail</a> |
+ <a href="#">Manga</a> |
+ <a href="#">Beelzebub</a>
+ </div>
+ <div class="footer_count rcol">
+ <span class="fade"><img src="/templates/Naruto-4Life/img/count.png" alt=""></span>
+ <span class="fade"><a href="http://fullweb.ucoz.ru/" target="_blank"><img src="http://manucoz.ru/uploads/posts/2013-12/1386348445_manucoz.png" width="88" height="31" border="0" alt="Шаблоны для uCoz"></a></span>
+ </div>
+ </div>
+ </div>
+ <div class="dcorearts fade"><a href="#" target="_blank" title="DCOReARTs.COM - Студия web - дизайна и графики">DCOReARTs.COM - Студия web - дизайна и графики</a></div>
+</footer>
+<!-- </footer> -->
+
+</div>
+<!--[if lt IE 9]>
+ <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+ <![endif]-->
+</body>
+</html>
+<!-- <popup> --><!-- </popup> -->
