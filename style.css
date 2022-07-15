@@ -1,429 +1,67 @@
-body {
-  color: #fff;
-  background-color: #1a1a1a;
-  background-image: url(https://get.wallhere.com/photo/anime-anime-girls-white-skin-picture-in-picture-dark-hair-Megumin-landscape-Kono-Subarashii-Sekai-ni-Shukufuku-wo-red-volcano-red-eyes-fan-art-1456301.jpg);
-}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Сайт с информацией о Keiz">
+    <meta content="keiz" property="og:site_name">
+    <meta content="https://cdn.glitch.me/0a5df5ed-ae93-4cc1-a1d8-f85f5d1acc00%2Finnfuz.png?v=1634793442675" property="og:image">
+    <meta name="author" content="Информация">
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#2F3136" />
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#2F3136" />
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-transcluent" />
+    <!-- Яндекс.Браузер -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="ya-title=#2F3136,ya-dock=fade" />
+    <meta name="og:image" content="ava2.png">
+    <title>Bio about Keiz</title>
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="fonts/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+    <link rel="shortcut icon" href="https://cdn.discordapp.com/attachments/900393120217329721/900615798316478484/unknown.png">
+</head>
+<body>
 
-/* ========== STYLES ========== */
-
-.round{
-  border-radius:5%;
-}
-
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-  padding:25px 0px;
-}
-
-.rown:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-.sides {
-  float:left;
-  padding:10px 10px;
-  width:12.49999%;
-  text-align: center;
-}
-.quarter {
-  float:left;
-  padding:10px 10px;
-  width:24.99999%;
-  text-align: center;
-}
-.half {
-  float:left;
-  padding:10px 10px;
-  width:49.99999%; 
-  text-align: center;
-}
-.one-thirds {
-  float:left;
-  padding:10px 10px;
-  width:33.33333%;
-  text-align: center;
-}
-.two-thirds {
-  float:left;
-  padding:10px 10px;
-  width:66.66666%;
-  text-align: center;
-}
-.full {
-  text-align: center;
-  width:100%
-}
-
-@media (max-width:1080px) {
-
-.sides {
-  float:left;
-  padding:5px 50px;
-  width:100%;
-  text-align: center;
-}
-.quarter {
-  float:left;
-  padding:5px 50px;
-  width:100%;
-  text-align: center;
-}
-.half {
-  float:left;
-  padding:5px 50px;
-  width:100%;
-  text-align: center;
-}
-.one-thirds {
-  float:left;
-  padding:5px 50px;
-  width:100%;
-  text-align: center;
-}
-.two-thirds {
-  float:left;
-  padding:5px 50px;
-  width:100%;
-  text-align: center;
-}
-.full {
-  text-align: center;
-  width:100%
-}
-
-}
-
-.lolol {
-clear:both;
-position:relative;
-bottom:0;
-left:0;
-background:#222;
-width:100%;
-height:100px;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  outline: 0;
-  box-sizing: border-box;
-}
-
-.navbar nav {
-  position: relative;
-  width: calc(100% - 50px);
-  margin: 0 auto;
-  padding: 7px 15px;
-  background: #333;
-  z-index: 1;
-  text-align: right;
-}
-
-.navbar li {
-  display: inline-block;
-  list-style-type: none;
-}
-
-@media (max-width:1080px) {
-.navbar li {
-  display: block;
-  list-style-type: none;
-}
-}
-
-.logo {
-  padding: 0px 5px;
-  float: left;
-  text-align: center;
-}
-
-.logo p {
-  font-weight: 300;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  padding: 0px 5px;
-  font-size: 15px;
-  line-height: 30px;
-  position: relative;
-  z-index: 1;
-}
-
-.navbar a {
-  text-decoration: none;
-  color: white;
-  cursor: pointer;
-  font-weight: 300;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  padding: 7px 25px;
-  font-size: 15px;
-  line-height: 30px;
-  position: relative;
-  z-index: 1;
-}
-
-.navbar a:hover {
-  color: #999;
-}
-
-.bottom {
-border-radius: 25px 25px 0px 0px;
-border-top: solid;
-border-top-color: #333;
-
-padding: 0px 0px 100px 0px;
-}
-
-.bottom a {
-  color: #2a5db0;
-}
-
-.boxnav {
-  text-decoration: none;
-  padding: 15px 15px;
-  background: #222;
-  border-radius: 10px;
-  border-style: solid;
-  width: 255px;
-  border-width: 1px;
-  border-color: #FFD800;
-}
-
-@media (max-width:1080px) {
-.boxnav {
-  text-decoration: none;
-  padding: 15px 15px;
-  background: #222;
-  border-color: #FFD800;
-  border-radius: 10px;
-  border-style: solid;
-  border-width: 1px;
-  width: 100%;
-}
-}
-
-.CMDSBAR {
-  border-radius: 10px;
-  border-style: solid;
-  border-color: #333;
-  border-width: 1px;
-
-  padding: 5px 39px;
-  font-size: 20px;
-  cursor: pointer;
-  line-height: 34px;
-}
-
-@media (max-width:1080px) {
-.CMDSBAR {
-  border-radius: 10px;
-  border-style: solid;
-  border-color: #333;
-  border-width: 1px;
-
-  padding: 5px calc(100% / 3 - 50px);
-  font-size: 20px;
-  cursor: pointer;
-  line-height: 34px;
-}
-}
-
-.box {
-  padding: 25px 25px;
-  background: #222;
-  border-color: #333;
-  border-radius: 15px;
-  border-style: solid;
-  border-width: 3px;
-}
-
-.boxb {
-  background: #222;
-  border-color: #333;
-  border-radius: 15px;
-  border-style: solid;
-  border-width: 3px;
-}
-
-body {cursor: url(http://zornet.ru/Aben/Abryn/cur116.cur), progress !important;}
-a {cursor: url(http://zornet.ru/Aben/Abryn/cur116.cur), progress !important;}
-
-::-webkit-scrollbar-button {
-  background-image:url('style.css');
-  background-repeat:no-repeat;
-  width:5px;
-  height:0px
-  }
+<!--Карточка-->
+<div class="card">
+            <div class="wrapper">
+    <div class="img-area">
+      <div class="inner-area">
+            <img src="https://media.discordapp.net/attachments/989458612369891338/993225814424436766/ff7ab07b16b74258.jpg?width=387&height=387" alt="avatar">
+            <p>
+            </p>
+        </div>
+      <h3 idd="name" class="name">iwf.</h3>
+    </div>
+</div>
+<!--Конец карточки-->
+<script>
+  jQuery(document).ready(function($){
+    $('<style>'+
+      '.scrollTop{ display:none; z-index:9999; position:fixed;'+
+        'bottom:40px; left:90%; width:90px; height:50px;'+
+        'background:url(button/img/arrow4.png) 0 0 no-repeat; }' +
+      '.scrollTop:hover{ background-position:0 -133px;}'
+    +'</style>').appendTo('body');
+    var
+    speed = 550,
+    $scrollTop = $('<a href="index.html#" class="scrollTop">').appendTo('body');		
+    $scrollTop.click(function(e){
+      e.preventDefault();
+      $( 'html:not(:animated),body:not(:animated)' ).animate({ scrollTop: 0}, speed );
+    });
   
-  ::-webkit-scrollbar-track {
-  background-color:#222
-  }
+    //появление
+    function show_scrollTop(){
+      ( $(window).scrollTop() > 330 ) ? $scrollTop.fadeIn(700) : $scrollTop.fadeOut(700);
+    }
+    $(window).scroll( function(){ show_scrollTop(); } );
+    show_scrollTop();
+  });
   
-  ::-webkit-scrollbar-thumb {
-  -webkit-border-radius: 0px;
-  border-radius: 0px;
-  background-color:#2a5db0;
-  }
-  
-  ::-webkit-scrollbar-thumb:hover{
-  background-color:#2a5db0;
-  }
-  
-  ::-webkit-resizer{
-  background-image:url('style.css');
-  background-repeat:no-repeat;
-  width:4px;
-  height:0px
-  }
-  
-  ::-webkit-scrollbar{
-  width: 10px;
-  }
-
-  .rainbow-animated {
-    background: linear-gradient(to right, rgb(255, 0, 0), rgb(255, 166, 0), rgb(255, 255, 0), rgb(0, 255, 0), rgb(0, 255, 255), rgb(0, 0, 255), rgb(142, 4, 255));
-    background-size: 400% 400%;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -webkit-animation: rainbow 10s ease infinite;
-    animation: rainbow 10s ease infinite;
-    font-size: 17px;
-    line-height: 17px;
-  }
-   
-  @-webkit-keyframes rainbow {
-    0% { background-position: 0% 50% }
-    50% { background-position: 100% 50% }
-    100% { background-position: 0% 50% }
-  }
-   
-  @keyframes rainbow {
-    0% { background-position: 0% 50% }
-    50% { background-position: 100% 50% }
-    100% { background-position: 0% 50% }
-  }
-
-.pricingTable{
-text-align: center;
-background: #280104;
-margin: 0 -15px;
-box-shadow: 0 0 10px #ababab;
-padding-bottom: 40px;
-border-radius: 10px;
-color: #cad0de;
-transform: scale(1);
-transition: all 0.5s ease 0s;
-}
-.pricingTable:hover{
-transform: scale(1.05);
-z-index: 1;
-}
-.pricingTable .pricingTable-header{
-padding: 40px 0;
-background: #280104;
-border-radius: 10px 10px 50% 50%;
-transition: all 0.5s ease 0s;
-}
-.pricingTable:hover .pricingTable-header{
-background: #5900ff;
-}
-.pricingTable .pricingTable-header i{
-font-size: 50px;
-color: #858c9a;
-margin-bottom: 10px;
-transition: all 0.5s ease 0s;
-}
-.pricingTable .price-value{
-font-size: 35px;
-color: #5900ff;
-transition: all 0.5s ease 0s;
-}
-.pricingTable .month{
-display: block;
-font-size: 14px;
-color: #cad0de;
-}
-.pricingTable:hover .pricingTable-header i,
-.pricingTable:hover .price-value,
-.pricingTable:hover .month{
-color: #fff;
-}
-.pricingTable .heading{
-font-size: 24px;
-color: #5900ff;
-margin-bottom: 20px;
-text-transform: uppercase;
-}
-.pricingTable .pricing-content ul{
-list-style: none;
-padding: 0;
-margin-bottom: 30px;
-}
-.pricingTable .pricing-content ul li{
-line-height: 30px;
-color: #a7a8aa;
-}
-.pricingTable .pricingTable-signup a{
-display: inline-block;
-font-size: 15px;
-color: #fff;
-padding: 10px 35px;
-border-radius: 20px;
-background: #5900ff;
-text-transform: uppercase;
-transition: all 0.3s ease 0s;
-}
-.pricingTable .pricingTable-signup a:hover{
-box-shadow: 0 0 10px #5900ff;
-}
-.pricingTable.blue .price-value,
-.pricingTable.blue .heading{
-color: #5900ff;
-}
-.pricingTable.blue:hover .pricingTable-header,
-.pricingTable.blue .pricingTable-signup a{
-background: #5900ff;
-}
-.pricingTable.blue .pricingTable-signup a:hover{
-box-shadow: 0 0 10px #5900ff;
-}
-.pricingTable.red .price-value,
-.pricingTable.red .heading{
-color: #5900ff;
-}
-.pricingTable.red:hover .pricingTable-header,
-.pricingTable.red .pricingTable-signup a{
-background: #5900ff;
-}
-.pricingTable.red .pricingTable-signup a:hover{
-box-shadow: 0 0 10px #5900ff;
-}
-.pricingTable.green .price-value,
-.pricingTable.green .heading{
-color: #5900ff;
-}
-.pricingTable.green:hover .pricingTable-header,
-.pricingTable.green .pricingTable-signup a{
-background: #5900ff;
-}
-.pricingTable.green .pricingTable-signup a:hover{
-box-shadow: 0 0 10px #5900ff;
-}
-.pricingTable.blue:hover .price-value,
-.pricingTable.red:hover .price-value,
-.pricingTable.green:hover .price-value{
-color: #fff;
-}
-@media screen and (max-width: 990px){
-.pricingTable{ margin: 0 0 20px 0; }
-}
-
-html, body, * {
-  margin: 0 auto;
-}
-
+</body>
+</html>
