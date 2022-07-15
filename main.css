@@ -1,67 +1,243 @@
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="description" content="Сайт с информацией о Keiz">
-    <meta content="keiz" property="og:site_name">
-    <meta content="https://cdn.glitch.me/0a5df5ed-ae93-4cc1-a1d8-f85f5d1acc00%2Finnfuz.png?v=1634793442675" property="og:image">
-    <meta name="author" content="Информация">
-    <!-- Chrome, Firefox OS and Opera -->
-    <meta name="theme-color" content="#2F3136" />
-    <!-- Windows Phone -->
-    <meta name="msapplication-navbutton-color" content="#2F3136" />
-    <!-- iOS Safari -->
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-transcluent" />
-    <!-- Яндекс.Браузер -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="viewport" content="ya-title=#2F3136,ya-dock=fade" />
-    <meta name="og:image" content="ava2.png">
-    <title>Bio about Keiz</title>
-    <script src="index.js"></script>
-    <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="fonts/css/all.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
-    <link rel="shortcut icon" href="https://cdn.discordapp.com/attachments/900393120217329721/900615798316478484/unknown.png">
-</head>
-<body>
+@import url('');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
 
-<!--Карточка-->
-<div class="card">
-            <div class="wrapper">
-    <div class="img-area">
-      <div class="inner-area">
-            <img src="https://media.discordapp.net/attachments/989458612369891338/993225814424436766/ff7ab07b16b74258.jpg?width=387&height=387" alt="avatar">
-            <p>
-            </p>
-        </div>
-      <h3 idd="name" class="name">iwf.</h3>
-    </div>
-</div>
-<!--Конец карточки-->
-<script>
-  jQuery(document).ready(function($){
-    $('<style>'+
-      '.scrollTop{ display:none; z-index:9999; position:fixed;'+
-        'bottom:40px; left:90%; width:90px; height:50px;'+
-        'background:url(button/img/arrow4.png) 0 0 no-repeat; }' +
-      '.scrollTop:hover{ background-position:0 -133px;}'
-    +'</style>').appendTo('body');
-    var
-    speed = 550,
-    $scrollTop = $('<a href="index.html#" class="scrollTop">').appendTo('body');		
-    $scrollTop.click(function(e){
-      e.preventDefault();
-      $( 'html:not(:animated),body:not(:animated)' ).animate({ scrollTop: 0}, speed );
-    });
-  
-    //появление
-    function show_scrollTop(){
-      ( $(window).scrollTop() > 330 ) ? $scrollTop.fadeIn(700) : $scrollTop.fadeOut(700);
-    }
-    $(window).scroll( function(){ show_scrollTop(); } );
-    show_scrollTop();
-  });
-  
-</body>
-</html>
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #1a1a1a;
+}
+
+.card {
+    background-color: #2F3136;
+    font-family: 'Poppins', sans-serif;;
+    height: 400px;
+    width: 400px;
+    border-radius: 20px;
+}
+
+.content {
+    padding: 0 15px 0 25px;
+}
+
+.up {
+    display: flex;
+    justify-content: space-between;
+}
+
+.photo {
+  height: calc(100% - 150px);
+  width: calc(100% - 150px);
+  border-radius: 50%;
+}
+
+
+
+.name {
+ font-size: 23px;
+  font-weight: 500;
+  color: white;
+  margin: 250px 0 10px 0;
+}
+
+.ok {
+    vertical-align: middle;
+    width: 20px;
+    height: 20px;
+    
+}
+.podname {
+   font-size: 15px;
+    line-height: 0;
+    padding-top: 20px;
+    color: #7D8082;
+  position: absolute; top: 230px; left: 50px;
+}
+
+.status {
+    vertical-align: middle;
+    width: 40px;
+    height: 40px;
+  position: absolute; top: 180px; left: 140px;
+    
+}
+
+
+.wrapper{
+  position: relative;
+  width: 350px;
+  padding: 30px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.wrapper .icon{
+  font-size: 17px;
+  color: #2f3136;
+  position: absolute;
+  cursor: pointer;
+  opacity: 0.7;
+  top: 15px;
+  height: 35px;
+  width: 35px;
+  text-align: center;
+  line-height: 35px;
+  border-radius: 50%;
+  font-size: 16px;
+}
+.wrapper .icon i{
+  position: relative;
+  z-index: 9;
+}
+.wrapper .icon.arrow{
+  left: 15px;
+}
+.wrapper .icon.dots{
+  right: 15px;
+}
+.wrapper .img-area{
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.img-area .inner-area{
+  height: calc(100% - 25px);
+  width: calc(100% - 25px);
+  border-radius: 50%;
+}
+.inner-area img{
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.wrapper .about{
+  color: #44476a;
+  font-weight: 400;
+  font-size: 16px;
+}
+.wrapper .social-icons{
+  margin: 15px 0 25px 0;
+}
+.social-icons a{
+  position: relative;
+  height: 40px;
+  width: 40px;
+  margin: 0 5px;
+  display: inline-flex;
+  text-decoration: none;
+  border-radius: 50%;
+}
+.social-icons a:hover::before,
+.wrapper .icon:hover::before,
+.buttons button:hover:before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  border-radius: 50%;
+  background: #ecf0f3;
+  box-shadow: inset -3px -3px 7px #ffffff,
+              inset 3px 3px 5px #ceced1;
+}
+.buttons button:hover:before{
+  z-index: -1;
+  border-radius: 5px;
+}
+.social-icons a i{
+  position: relative;
+  z-index: 3;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  line-height: 40px;
+}
+.social-icons a.fb i{
+  color: #4267B2;
+}
+.social-icons a.twitter i{
+  color: #1DA1F2;
+}
+.social-icons a.insta i{
+  color: #E1306C;
+}
+.social-icons a.yt i{
+  color: #ff0000;
+}
+.wrapper .buttons{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.buttons button{
+  position: relative;
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 12px 0;
+  color: #31344b;
+  font-size: 17px;
+  font-weight: 400;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 4;
+}
+.buttons button:first-child{
+  margin-right: 10px;
+}
+.buttons button:last-child{
+  margin-left: 10px;
+}
+.wrapper .social-share{
+  display: flex;
+  width: 100%;
+  margin-top: 30px;
+  padding: 0 5px;
+  justify-content: space-between;
+}
+.social-share .row{
+  color: #31344b;
+  font-size: 17px;
+  cursor: pointer;
+  position: relative;
+}
+.social-share .row::before{
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 2px;
+  background: #e0e6eb;
+  margin-left: -25px;
+}
+.row:first-child::before{
+  background: none;
+}
+.social-share .row i.icon-2{
+  position: absolute;
+  left: 0;
+  top: 50%;
+  color: #31344b;
+  transform: translateY(-50%);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+.row:nth-child(1):hover i.fa-heart,
+.row:nth-child(2):hover i.fa-comment{
+  opacity: 1;
+  pointer-events: auto;
+}
