@@ -1,29 +1,100 @@
-@import url('');
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
-}
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
 
 body {
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-color: #1a1a1a;
+    background-color: #273036;
+    font-family: Montserrat, sans-serif;
 }
 
+/* Всё что связано с текстом */
+a,
+p {
+    text-decoration: none;
+    color: #273036;
+}
+
+h3,
+h4,
+    {
+    font-size: 20px;
+    line-height: 20px;
+    padding-top: 0px;
+}
+
+h1 {
+    color: black;
+}
+
+h6 {
+    margin: 5px 0;
+    text-transform: uppercase;
+    font-size: 13px;
+    color: #273036;
+}
+
+p {
+    font-size: 16px;
+    line-height: 21px;
+}
+
+/* Всё что связано с текстом */
+
+
+/* Навыки */
+.skills {
+    background-color: transparent;
+    text-align: left;
+    padding-top: 15px;
+}
+
+.skills ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.skills ul li {
+    border: 1px solid #273036;
+    border-radius: 2px;
+    display: inline-block;
+    font-size: 12px;
+    margin: 0 7px 7px 0;
+    padding: 7px;
+    transition: all .3s;
+}
+
+.skills ul li:hover {
+    border: 1px solid white;
+    border-radius: 2px;
+    display: inline-block;
+    font-size: 12px;
+    margin: 0 7px 7px 0;
+    padding: 7px;
+    background-color: #273036;
+    color: white;
+}
+
+/* Навыки */
+
+
+/* Карточка */
 .card {
-    background-color: #2F3136;
-    font-family: 'Poppins', sans-serif;;
-    height: 400px;
-    width: 400px;
-    border-radius: 20px;
+    background-color: white;
+    font-family: 'Poppins', sans-serif;
+    width: 350px;
+    padding: 50px;
+    border-radius: 10px;
+ 
+  
+
 }
 
 .content {
     padding: 0 15px 0 25px;
+    color: #273036;
 }
 
 .up {
@@ -31,213 +102,40 @@ body {
     justify-content: space-between;
 }
 
-.photo {
-  height: calc(100% - 150px);
-  width: calc(100% - 150px);
-  border-radius: 50%;
+.avatar_card {
+
+  font-size: 50px;
+  max-width: 110px;
+  border: solid white;
+  border-radius: 70px;
+}
+
+
+.button {
+  display:flex;
+  
+ background-color: #5865F2;
+ color: #ffffff;
+ border-radius: 10px;
+ padding: 9px 150px; 
+ margin-top: 10px;
+ margin: 5px;
+ font-size: 10px;
+ text-decoration: none;
+ font-family: 'Montserrat', sans-serif;
+justify-content:center;
+align-items:center;
+
+transition: 0.25s;
+}
+
+.button:hover {
+background-color: #404cb3;
 }
 
 
 
-.name {
- font-size: 23px;
-  font-weight: 500;
-  color: white;
-  margin: 250px 0 10px 0;
+.buttonpay:hover {
+background-color: #F7BA5F;
 }
 
-.ok {
-    vertical-align: middle;
-    width: 20px;
-    height: 20px;
-    
-}
-.podname {
-   font-size: 15px;
-    line-height: 0;
-    padding-top: 20px;
-    color: #7D8082;
-  position: absolute; top: 230px; left: 50px;
-}
-
-.status {
-    vertical-align: middle;
-    width: 40px;
-    height: 40px;
-  position: absolute; top: 180px; left: 140px;
-    
-}
-
-
-.wrapper{
-  position: relative;
-  width: 350px;
-  padding: 30px;
-  border-radius: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-.wrapper .icon{
-  font-size: 17px;
-  color: #2f3136;
-  position: absolute;
-  cursor: pointer;
-  opacity: 0.7;
-  top: 15px;
-  height: 35px;
-  width: 35px;
-  text-align: center;
-  line-height: 35px;
-  border-radius: 50%;
-  font-size: 16px;
-}
-.wrapper .icon i{
-  position: relative;
-  z-index: 9;
-}
-.wrapper .icon.arrow{
-  left: 15px;
-}
-.wrapper .icon.dots{
-  right: 15px;
-}
-.wrapper .img-area{
-  height: 150px;
-  width: 150px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.img-area .inner-area{
-  height: calc(100% - 25px);
-  width: calc(100% - 25px);
-  border-radius: 50%;
-}
-.inner-area img{
-  height: 100%;
-  width: 100%;
-  border-radius: 50%;
-  object-fit: cover;
-}
-
-.wrapper .about{
-  color: #44476a;
-  font-weight: 400;
-  font-size: 16px;
-}
-.wrapper .social-icons{
-  margin: 15px 0 25px 0;
-}
-.social-icons a{
-  position: relative;
-  height: 40px;
-  width: 40px;
-  margin: 0 5px;
-  display: inline-flex;
-  text-decoration: none;
-  border-radius: 50%;
-}
-.social-icons a:hover::before,
-.wrapper .icon:hover::before,
-.buttons button:hover:before{
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  border-radius: 50%;
-  background: #ecf0f3;
-  box-shadow: inset -3px -3px 7px #ffffff,
-              inset 3px 3px 5px #ceced1;
-}
-.buttons button:hover:before{
-  z-index: -1;
-  border-radius: 5px;
-}
-.social-icons a i{
-  position: relative;
-  z-index: 3;
-  text-align: center;
-  width: 100%;
-  height: 100%;
-  line-height: 40px;
-}
-.social-icons a.fb i{
-  color: #4267B2;
-}
-.social-icons a.twitter i{
-  color: #1DA1F2;
-}
-.social-icons a.insta i{
-  color: #E1306C;
-}
-.social-icons a.yt i{
-  color: #ff0000;
-}
-.wrapper .buttons{
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
-}
-.buttons button{
-  position: relative;
-  width: 100%;
-  border: none;
-  outline: none;
-  padding: 12px 0;
-  color: #31344b;
-  font-size: 17px;
-  font-weight: 400;
-  border-radius: 5px;
-  cursor: pointer;
-  z-index: 4;
-}
-.buttons button:first-child{
-  margin-right: 10px;
-}
-.buttons button:last-child{
-  margin-left: 10px;
-}
-.wrapper .social-share{
-  display: flex;
-  width: 100%;
-  margin-top: 30px;
-  padding: 0 5px;
-  justify-content: space-between;
-}
-.social-share .row{
-  color: #31344b;
-  font-size: 17px;
-  cursor: pointer;
-  position: relative;
-}
-.social-share .row::before{
-  position: absolute;
-  content: "";
-  height: 100%;
-  width: 2px;
-  background: #e0e6eb;
-  margin-left: -25px;
-}
-.row:first-child::before{
-  background: none;
-}
-.social-share .row i.icon-2{
-  position: absolute;
-  left: 0;
-  top: 50%;
-  color: #31344b;
-  transform: translateY(-50%);
-  opacity: 0;
-  pointer-events: none;
-  transition: all 0.3s ease;
-}
-.row:nth-child(1):hover i.fa-heart,
-.row:nth-child(2):hover i.fa-comment{
-  opacity: 1;
-  pointer-events: auto;
-}
