@@ -1,52 +1,361 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="description" content="Основная Информация о Akayo.">
-    <meta content="akayo" property="og:site_name">
-    <meta content="static/avatarakayo.png" property="og:image">
-    <meta name="author" content="Информация">
-    <!-- Chrome, Firefox OS and Opera -->
-    <meta name="theme-color" content="#2F3136" />
-    <!-- Windows Phone -->
-    <meta name="msapplication-navbutton-color" content="#2F3136" />
-    <!-- iOS Safari -->
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-transcluent" />
-    <!-- Яндекс.Браузер -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="viewport" content="ya-title=#2F3136,ya-dock=fade" />
-    <meta name="og:image" content="ava2.png">
-    <title>Bio about Akayo.</title>
-    <link rel="stylesheet" href="static/main.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
-    <link rel="shortcut icon" href="static/avatarakayo.png">
-</head>
-    <body>
-
-        <!--Карточка-->
-        <div class="card">
-            <div class="content">
-                <div class="up">
-                    <img class="avatar_card" src="static/avatarakayo.png" alt="avatar_akayo">
-                    <p>
-                    </p>
-                </div>
-              
-  <div style="display:flex;justify-content:center;align-items:center;">  
-
-<a href="https://discord.com/users/919184241273765889" class="button"><img src="https://cdn.glitch.global/0a5df5ed-ae93-4cc1-a1d8-f85f5d1acc00/discord.png?v=1657909538021" height="30" weight="30"></a>
-
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=0.6">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<link href="static/earth.css" rel="stylesheet">
+<link href="static/framework.css" rel="stylesheet">
+<link href="static/commands.css" rel="stylesheet">
+<script src="https://kit.fontawesome.com/fa97a415ec.js" crossorigin="anonymous"></script>
+<link href="static/EdenBot.png" rel="shortcut icon">
+<title>Команды бота EdenBot</title>
+<meta property="og:site_name" content="Дискорд Бот EdenBot">
+<meta property="og:title" content="Команды бота EdenBot">
+<meta property="title" content="Команды бота EdenBot">
+<meta property="og:image" content="/static/EdenBot.png">
+<meta property="og:description" content="Сайт самого лучшего среди русскоязычных Discord-ботов!">
+<meta name="theme-color" content="#F28645">
+<meta itemprop="keywords" name="keywords" content="дискорд, discord, боты дискорд, боты для дискорда, дискорд боты, лист ботов дискорд, топ ботов дискорд, русские боты дискорд, список русских ботов дискорд, лучшие боты дискорд, discord bots, bots discord, boticord, top bots, topgg, botsgg, discordbots, botsfordiscord, cool discord bots, EdenBot, EdenBot discord, EdenBot discord bot, boticord, музыка, развлечения, утилиты, защита, анти-скам, анти-спам, анти-инвайт, другое, реакции, кастомизация, 18+, nsfw, vimeworld">
+<meta itemprop="description" name="description" content="EdenBot - Многофункциональный бот, с множеством интересных команд.">
+<meta http-equiv="content-language" content="ru">
+<script async src='cdn-cgi/challenge-platform/h/b/scripts/invisible.js'></script></head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<div class="container-fluid">
+<a class="navbar-brand" href="home"><img src="static/EdenBot.png" width="48" style="border-radius: 30%;"></a>
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarNavDropdown">
+<ul class="navbar-nav">
+<li class="nav-item">
+<a class="nav-link" href="home">Главная</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="https://keiz.ml" target="_blank">Тех. поддержка</a>
+</li>
+  <li class="nav-item">
+<a class="nav-link" href="https://keiz.ml/" target="_blank">Новости</a>
+</li>
+<li class="nav-item">
+</li>
+</ul>
 </div>
-  </div>
+</div>
+</nav>
+<div class="container">
+<div style="padding-top: 70px;" class="safe-zone"></div>
+<div class="text-center">
+<h2 style="color: white"><img src="static/EdenBot.png" style="border-radius: 30%;" width="64"> EdenBot</h2>
+<h3 style="color: white"> EdenBot - Многофункциональный бот, с множеством интересных команд.</h3>
+</div>
+<hr>
+<div class="text-center">
+<div class="patext-center">
+<div class="partner-main">
+<img width="43px" height="43px" src="static/commands.png">
+<div class="partner-title">Аргументы</div>
+<div class="partner-subtitle"><b>[]</b> - обязательный аргумент</div>
+<div class="partner-subtitle"><b>()</b> - не обязательный аргумент</div>
+<div class="partner-subtitle"><b>|</b> - выборчный агрумент</div>
+</div>
+<div class="text-center">
+ <h2 style="color: white">Команды бота</h2>
+<div class="commands">
+<div class="collapseFW" style="text-align: start;">
+<div class="collapseFW-button">
+<i class="fas fa-екзщ-alt" style="margin-right: 10px; font-size: 20px;"></i> Система Уровней
+<span class="cmdLength"><strong>4</strong></span>
+</div>
+<div class="collapseFW-content" style="text-align: start; position: relative">
+<h6 style="padding: 10px;">
+<div class="cmd"><strong>g!rank
+<br />
+Псевдонимы:
+<br />g!rank, g!card, g!карточка, g!ранг (user)</strong> - Возвращает ранг автора или упомянутого юзера.</div>
+</h6>
+<h6 style="padding: 10px;">
+<div class="cmd"><strong>g!rep
+<br />
+Псевдонимы:
+<br />g!rep, g!реп, g!репутация, g!reputation [user]</strong> - Поднять репутацию указанному юзеру на 1.</div>
+</h6>
+<h6 style="padding: 10px;">
+<div class="cmd"><strong>g!top
+<br />
+Псевдонимы:
+<br />g!top, g!lb, g!лидеры, g!топ [user]</strong> - Топ N юзеров по опыту.</div>
+</h6>
+<h6 style="padding: 10px;">
+<div class="cmd"><strong>g!set-level
+<br />
+Псевдонимы:
+<br />g!set_level, g!setlevel, g!setlvl, g!уровень [user]</strong> - Редактирует уровень участника.</div>
+</h6>
+</h6>
+</div>
+</div>
+<div class="collapseFW" style="text-align: start;">
+<div class="collapseFW-button">
+<i class="fas fa-shield-lt" style="margin-right: 10px; font-size: 20px;"></i> Утилиты
+<span class="cmdLength"><strong>8</strong></span>
+</div>
+<div class="collapseFW-content" style="text-align: start; position: relative">
+<h6 style="padding: 10px;">
+<div class="cmd"><strong>g!avatar
+<br />
+Псевдонимы:
+<br />g!avatar, g!аватар [user]</strong> - Показывает аватар упомянутого участника или участника, вызвавшего команду.</div>
+</h6>
+<h6 style="padding: 10px;">
+<div class="cmd"><strong>g!bot
+<br />
+Псевдонимы:
+<br />g!bot, g!бот g!system, g!botinfo, g!стат, g!система</strong> - Покажет общую статистику EdenBot: количество серверов, пользователей, каналов, статус платформы и т.д.</div>
+</h6>
+<h6 style="padding: 10px;">
+<div class="cmd"><strong>g!сalculator
+<br />
+Псевдонимы:
+<br />g!calc, g!math, g!вычислить, g!калькулятор [math] </strong> - Покажет общую статистику EdenBot: количество серверов, пользователей, каналов, статус платформы и т.д.</div>
+</h6>
+<h6 style="padding: 10px;">
+<div class="cmd"><strong>g!help
+<br />
+Псевдонимы:
+<br />g!help, g!хелп, g!помощь, g!меню, g!menu </strong> - Показывает справку по всем командам и категориям или по указанной категории команд.</div>
+</h6>
+</h6>
+<h6 style="padding: 10px;">
+<div class="cmd"><strong>g!random 
+<br />
+Псевдонимы:
+<br />g!random, g!rand, g!рандом, g!ранд [Number 1 and Number 2] </strong> - Возвращает произвольное число в зависимости от параметров</div>
+</h6>
+</h6>
+<h6 style="padding: 10px;">
+<div class="cmd"><strong>g!server 
+<br />
+Псевдонимы:
+<br />g!serverinfo, g!сервер, g!серверинфо </strong> - Показывает информацию о сервере: количество участников, владельца, уровень проверки, звено и так далее.</div>
+<h6 style="padding: 10px;">
+<div class="cmd"><strong>g!rules 
+<br />
+Псевдонимы:
+<br />g!rules, g!правила </strong> - Показывает оснвные правила.</div>
+</h6>
+<h6 style="padding: 10px;">
+<div class="cmd"><strong>g!ping 
+<br />
+Псевдонимы:
+<br />g!ping, g!пинг </strong> - Показывает основную задержку бота.</div>
+</h6>
+</div>
+</div>
+<div class="collapseFW" style="text-align: start;">
+<div class="collapseFW-button">
+<i class="fas fa-co" style="margin-right: 10px; font-size: 20px;"></i> Админ
+<span class="cmdLength"><strong>3</strong></span>
+</div>
+<div class="collapseFW-content" style="text-align: start; position: relative">
+<h6 style="padding: 10px;">
+<div class="cmd"><strong>g!set-prefix 
+<br />
+Псевдонимы:
+<br />g!set_prefix, g!setprefix, g!префикс, g!prefix </strong> - Смена префикса для выполнения команд</div>
+</h6>
+<h6 style="padding: 10px;">
+<div class="cmd"><strong>g!set-color
+<br />
+Псевдонимы:
+<br />g!set_color, g!setcolor g!цвет_эмбеда </strong> - Смена цвета эмбеда</div>
+</h6>
+<h6 style="padding: 10px;">
+<div class="cmd"><strong>g!set-level
+<br />
+Псевдонимы:
+<br />g!set_level, g!setlevel, g!setlvl, g!уровень [user]</strong> - Редактирует уровень участника.</div>
+</div>
+</div>
+<div class="collapseFW" style="text-align: start;">
+<div class="collapseFW-button">
+<i class="fas fa-gampad" style="margin-right: 10px; font-size: 20px;"></i> Команды
+<span class="cmdLength"><strong>7</strong></span>
+</div>
+<div class="collapseFW-content" style="text-align: start; position: relative">
+</h6>
+<h6 style="padding: 10px;">
+<div class="cmd"><strong>g!profile 
+<br />
+Псевдонимы:
+<br />g!user, g!pr, g!профиль  </strong> - Показывает информацию об участнике: имя, статус, информация, аватарка и так далее.</div>
+</h6>
+<h6 style="padding: 10px;">
+<div class="cmd"><strong>g!me 
+<br />
+Псевдонимы:
+<br />g!осебе, g!bio  </strong> - Позволяет установить какую-либо информацию о себе. Данная информация также будет отображаться по команде g!profile</div>
+</h6>
+<h6 style="padding: 10px;">
+<div class="cmd"><strong>g!donate 
+<br />
+Псевдонимы:
+<br />g!донат  </strong> - Предостовляет информацию о донатах и бонусах.</div>
+</h6>
+<h6 style="padding: 10px;">
+<div class="cmd"><strong>g!gay 
+<br />
+Псевдонимы:
+<br />g!гей, g!rainbow, g!радужный (user) </strong> - добовляет радужный эффект на вашу аватарку.</div>
+</h6>
+<h6 style="padding: 10px;">
+<div class="cmd"><strong>g!blur 
+<br />
+Псевдонимы:
+<br />g!блюр, g!размытие (user) </strong> - добовляет эффект размытия на вашу аватарку.</div>
+</h6>
+<h6 style="padding: 10px;">
+<div class="cmd"><strong>g!sex  
+<br />
+Псевдонимы:
+<br />g!секс [user] </strong> - заняться сексом с упомянутым юзером.</div>
+</h6>
+</h6>
+<h6 style="padding: 10px;">
+<div class="cmd"><strong>g!trigg  
+<br />
+Псевдонимы:
+<br />g!тригг (user) </strong> - тресет вашу аватраку.</div>
+</h6>
+</div>
+</div>
+  <div class="collapseFW" style="text-align: start;">
+<div class="collapseFW-button">
+<i class="fas fa-gampad" style="margin-right: 10px; font-size: 20px;"></i> Модерация
+<span class="cmdLength"><strong>6</strong></span>
+</div>
+<div class="collapseFW-content" style="text-align: start; position: relative">
+<h6 style="padding: 10px;">
+<div class="cmd"><strong>g!clear
+<br />
+Псевдонимы:
+<br />g!purge g!clean, g!jочистить [message count] </strong> -  Очистит последние сообщения в текущем канале.</div>
+</h6>
+<h6 style="padding: 10px;">
+<div class="cmd"><strong>g!ban
+<br />
+Псевдонимы:
+<br />g!бан, g!заблокировать [user] </strong> - Изгоняет указанного участника с сервера навсегда.</div>
+</h6>
+<h6 style="padding: 10px;">
+<div class="cmd"><strong>g!kick
+<br />
+Псевдонимы:
+<br />g!кик, g!выгнать [user] </strong> - Изгоняет указанного участника с сервера с возможностью возвращения.</div>
+</h6>
+<h6 style="padding: 10px;">
+<div class="cmd"><strong>g!warn
+<br />
+Псевдонимы:
+<br />g!пред [user] [reason] </strong> - Выдает указанному участнику бессрочное наказания за нарушения.</div>
+</h6>
+<h6 style="padding: 10px;">
+<div class="cmd"><strong>g!remove-warn
+<br />
+Псевдонимы:
+<br />g!rw, g!clearwarn, g!set-warn, g!снятьпред [user]</strong> - Снимает с участника предупреждение по номеру случая из команды "g!warns".</div>
+</h6>
+<h6 style="padding: 10px;">
+<div class="cmd"><strong>g!remove-warn
+<br />
+Псевдонимы:
+<br />g!check-warns, g!warns, g!warnings, g!преды, g!варны, g!infractions (user)</strong> - Показывает список активных предупреждений указанного участника или участника, вызвавшего команду.</div>
+</h6>
+</div>
+</div>
+<div class="collapseFW" style="text-align: start;">
+<div class="collapseFW-button">
+<i class="fas fa-shield-lt" style="margin-right: 10px; font-size: 20px;"></i> Музыка
+<span class="cmdLength"><strong>8</strong></span>
+</div>
+<div class="collapseFW-content" style="text-align: start; position: relative">
+<h6 style="padding: 10px;">
+<div class="cmd"><strong>g!play
+<br />
+Псевдонимы:
+<br />g!play, g!плей, g!p, g!п [название мелодии] </strong> - Воспроизвести композицию в голосовом канале.</div>
+</h6>
+<h6 style="padding: 10px;">
+<div class="cmd"><strong>g!stop
+<br />
+Псевдонимы:
+<br />g!stop, g!стоп</strong> - Полностью останавливает воспроизведение.</div>
+</h6>
+<h6 style="padding: 10px;">
+<div class="cmd"><strong>g!join
+<br />
+Псевдонимы:
+<br />g!c, g!connect, g!подключиться</strong> - Подлкючение к каналу.</div>
+</h6>
+<h6 style="padding: 10px;">
+<div class="cmd"><strong>g!leave
+<br />
+Псевдонимы:
+<br />g!ds, g!disconnect, g!отключиться</strong> - Отлючение от канала.</div>
+</h6>
+<h6 style="padding: 10px;">
+<div class="cmd"><strong>g!lyrics
+<br />
+Псевдонимы:
+<br />g!lyrics, g!текст, </strong> - Отправка текста песни.</div>
+</h6>
+<h6 style="padding: 10px;">
+<div class="cmd"><strong>g!pause
+<br />
+Псевдонимы:
+<br />g!pause, g!пауза </strong> - Поставить воспроизведение на паузу.</div>
+</h6>
+<h6 style="padding: 10px;">
+<div class="cmd"><strong>g!skip
+<br />
+Псевдонимы:
+<br />g!skip, g!скип </strong> - Пропустить текущую воспроизводимую композицию.</div>
+</h6>
+<h6 style="padding: 10px;">
+<div class="cmd"><strong>g!stop
+<br />
+Псевдонимы:
+<br />g!stop, g!s, g!стоп </strong> - Остановить воспроизведение.</div>
+</h6>
+<h6 style="padding: 10px;">
+<div class="cmd"><strong>g!volume
+<br />
+Псевдонимы:
+<br />g!volume, g!громкость </strong> - Установить громкость воспроизведения.</div>
+</h6>  
+<div style="padding-bottom: 25px;" class="safe-zone"></div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.j" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous">
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous">
+    </script>
+<script src="static/framework.js"></script>
 
-                <h1>Akayo. </h1>
-                <p>Let's write a little about the creator of the site, that is, about me. My name is Akayo, studying a couple of programming languages and also web programming.</p>
-            </div>
-        
-        <!--Карточка-->
-    
-    </body>
+<script type="text/javascript">
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(85287403, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true
+   });
+    </script>
+<noscript><div><img src="https://mc.yandex.ru/watch/85287403" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+
+<script type="text/javascript">(function(){window['__CF$cv$params']={r:'691ce8387fff1604',m:'4iaMl6mId6LDb7CHvE.IgAqquCNwszDcyRSqU5790Hs-1632160342-0-AXicO+ozNL/e1yFDRXz9p0t7sYQLcWtSuzpWM8gLcROd3iAyTPwHPoxO00LBIgaGj/XP9NfFd8KGg8JA0PJvKT8df3GBvOjfHcP8S4hWi3IauJtvvFJt3KaIXIVjHCXP+Q==',s:[0x0a9d3a7b99,0xd44d9668c0],u:'/cdn-cgi/challenge-platform/h/b'}})();</script></body>
 </html>
-
-
